@@ -12,7 +12,7 @@ def mavenbuild()
 
 def contdep(credential,privateip,pathname)
 {
-    deploy adapters: [tomcat9(credentialsId: '${credential}', path: '', url: 'http://${privateip}:8080')], contextPath: '${pathname}', war: '**/*.war'
+     deploy adapters: [tomcat9(credentialsId: '${credential}', path: '', url: 'http://${privateip}:8080')], contextPath: '${pathname}', war: '**/*.war'
 }
 
 
